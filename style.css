@@ -1,0 +1,160 @@
+/* ========== CSS Variables ========== */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+/* ========== Reset & Base ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--stone-100);
+  font-size: 16px;
+  color: var(--stone-900);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ========== Main Container ========== */
+article {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* ========== Headings ========== */
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 2.2rem;
+  color: var(--stone-900);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--brown-800);
+}
+
+/* ========== Paragraph ========== */
+p {
+  margin-bottom: 1.5rem;
+  color: var(--stone-600);
+}
+
+/* ========== Preparation Time ========== */
+.PreTime {
+  background-color: var(--rose-50);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.PreTime h2 {
+  color: var(--rose-800);
+}
+
+.PreTime ul {
+  padding-left: 1.5rem;
+}
+
+.PreTime li {
+  margin-bottom: 0.75rem;
+}
+
+.PreTime li::marker {
+  color: var(--rose-800);
+  font-weight: bold;
+}
+
+/* ========== Ingredients ========== */
+.Ingredients ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.Ingredients li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== Instructions ========== */
+.Instructions ol {
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+.Instructions li {
+  margin-bottom: 1rem;
+  color: var(--stone-600);
+}
+
+.Instructions li::marker {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
+.Instructions strong,
+.Instructions b {
+  color: var(--stone-900);
+}
+
+/* ========== Nutrition Table ========== */
+/* تنسيق جدول التغذية */
+.Nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.Nutrition tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%); /* Stone 150 */
+}
+
+.Nutrition td {
+  padding: 1rem;
+}
+
+/* العمود الأول (اسم العنصر الغذائي) */
+.Nutrition td:first-child {
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+}
+
+/* العمود الثاني (القيمة) */
+.Nutrition td:last-child {
+  color: hsl(14, 45%, 36%); /* Brown 800 */
+  font-weight: bold;
+}
+
+
+
+/* ========== Footer Attribution ========== */
+footer.attribution {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+footer.attribution a {
+  color: var(--brown-800);
+  text-decoration: none;
+}
